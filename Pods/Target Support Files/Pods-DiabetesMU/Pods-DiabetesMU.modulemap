@@ -1,0 +1,6 @@
+framework module Pods_DiabetesMU {
+  umbrella header "Pods-DiabetesMU-umbrella.h"
+
+  export *
+  module * { export * }
+}

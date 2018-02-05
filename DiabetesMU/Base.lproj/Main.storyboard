@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="fmz-VB-tEF">
+            <objects>
+                <tableViewController id="04s-1E-RET" customClass="TableViewController" customModule="DiabetesMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wMf-DH-EWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="T2W-DR-og4" detailTextLabel="Omp-jt-pAn" rowHeight="135" style="IBUITableViewCellStyleSubtitle" id="Zxy-L5-UEs">
+                                <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zxy-L5-UEs" id="4ya-kN-tR8">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="134.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T2W-DR-og4">
+                                            <rect key="frame" x="16" y="40" width="41" height="26.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Omp-jt-pAn">
+                                            <rect key="frame" x="16" y="70.5" width="59" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="04s-1E-RET" id="VbB-kx-O8x"/>
+                            <outlet property="delegate" destination="04s-1E-RET" id="e6j-bg-Yoz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="BDU-yx-lja"/>
+                    <connections>
+                        <segue destination="MJW-DO-An6" kind="show" identifier="segue" id="pBK-5j-HPA"/>
+                        <segue destination="y3r-cw-uSf" kind="show" identifier="segue1" id="m3r-eZ-p5I"/>
+                        <segue destination="WZl-ZD-Fg0" kind="show" identifier="segue2" id="BJD-y9-MuK"/>
+                        <segue destination="04D-eS-WKF" kind="show" identifier="segue3" id="yPK-1F-cNh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TO4-bB-vQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.8" y="257.72113943028489"/>
+        </scene>
+        <!--Activity-->
+        <scene sceneID="Tte-r6-acD">
+            <objects>
+                <viewController id="04D-eS-WKF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ise-NO-jeG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cql-zO-H35">
+                                <rect key="frame" x="89" y="499" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Add Activity">
+                                    <color key="titleColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zx0-BY-hMJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="qJK-Er-8AM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezf-XR-GO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="812"/>
+        </scene>
+        <!--Blood Glucose-->
+        <scene sceneID="QAG-eW-Xmq">
+            <objects>
+                <viewController id="y3r-cw-uSf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9HJ-dr-1RK" customClass="ChartMarkerView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQY-K0-R5u">
+                                <rect key="frame" x="72" y="499" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Add Blood Glucose">
+                                    <color key="titleColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KUb-FU-OS4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blood Glucose" id="2vE-3W-j7a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAF-Bv-C1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-477"/>
+        </scene>
+        <!--Mood-->
+        <scene sceneID="zHH-9h-QfS">
+            <objects>
+                <viewController id="WZl-ZD-Fg0" customClass="MoodViewController" customModule="DiabetesMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Wq-sD-bwx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwx-iY-dT9">
+                                <rect key="frame" x="100" y="499" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Add Mood">
+                                    <color key="titleColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeSurvey:" destination="WZl-ZD-Fg0" eventType="touchUpInside" id="EGg-v9-xuH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3dO-vr-IS4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mood" id="HUb-qI-mlf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cII-s6-aEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="242"/>
+        </scene>
+        <!--Weight-->
+        <scene sceneID="GMH-a0-aQQ">
+            <objects>
+                <viewController id="MJW-DO-An6" customClass="ChartViewController" customModule="DiabetesMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bq-tE-xc3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter weight here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="az0-PP-1zR">
+                                <rect key="frame" x="62" y="353" width="250" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SlG-rR-tfT" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="73" width="343" height="257"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-m7-lgi">
+                                <rect key="frame" x="72" y="391" width="231" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Add Weight">
+                                    <color key="titleColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="weightBtn:" destination="MJW-DO-An6" eventType="touchUpInside" id="DiJ-8q-QJT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="kav-Oy-tZG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weight" id="ufQ-4v-zWF"/>
+                    <connections>
+                        <outlet property="WeightField" destination="az0-PP-1zR" id="fOf-ZO-6ws"/>
+                        <outlet property="weightChart" destination="SlG-rR-tfT" id="fsx-9S-Vh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0d-iN-N1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-1121.2893553223389"/>
+        </scene>
+        <!--Status-->
+        <scene sceneID="HiJ-xt-teh">
+            <objects>
+                <navigationController id="w77-Ys-vnD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Status" image="profile" id="7GP-OP-NOS">
+                        <color key="badgeColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Snx-Ad-773">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.61879944099999995" green="0.56785765040000002" blue="0.72276180980000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="04s-1E-RET" kind="relationship" relationship="rootViewController" id="Aud-qE-Z9Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhd-la-Hph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-319"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SettingsViewController" customModule="DiabetesMU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="setting" id="cPa-gy-q4n">
+                        <color key="badgeColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.61879944103228801" green="0.56785765039012481" blue="0.72276180982589722" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="w77-Ys-vnD" kind="relationship" relationship="viewControllers" id="165-xF-oOx"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="45" height="45"/>
+        <image name="setting" width="45" height="45"/>
+    </resources>
+</document>
